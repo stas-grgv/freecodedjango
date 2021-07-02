@@ -1,23 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>About Us</h1>
-<p>This is template</p>
-<p>
-	My Text: {{ my_text }}
-</p>
-<p>
-	My Number: {{ my_number }}
-</p>
-<h3>For loop in templates</h3>
-	<p>For loop list with condition</p>
-<ul>
-		{% for my_sub_item in my_list %}
-			{% if my_sub_item == 42 %}
-		<li>{{my_sub_item |add:52}}</li>
-			{% else %}
-	<li>{{ my_sub_item }}</li>
-	{% endif %}
-{% endfor %}
-</ul>
+    <h1>About Us</h1>
+    <p>This is template</p>
+    <p>
+        My Text: {{ my_text }}
+    </p>
+    <p>
+        My Number: {{ my_number }}
+    </p>
+    <h3>For loop in templates</h3>
+    <p>For loop list with condition</p>
+    <ul>
+        {% for my_sub_item in my_list %}
+            {% if my_sub_item == 42 %}
+                <li>{{ my_sub_item |add:52 }}</li>
+            {% elif my_sub_item == 'bce' %}
+            <li>This is not a number</li>
+            {% else %}
+                <li>{{ my_sub_item }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 {% endblock %}
