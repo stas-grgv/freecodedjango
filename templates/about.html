@@ -11,16 +11,19 @@
         My Number: {{ my_number }}
     </p>
     <h3>For loop in templates</h3>
-    <p>For loop list with condition</p>
+    <p>For loop list <s>with condition</s></p>
     <ul>
-        {% for my_sub_item in my_list %}
-            {% if my_sub_item == 42 %}
-                <li>{{ my_sub_item |add:52 }}</li>
-            {% elif my_sub_item == 'bce' %}
-            <li>This is not a number</li>
-            {% else %}
-                <li>{{ my_sub_item }}</li>
-            {% endif %}
+        {#        {% for my_sub_item in my_list %}#}
+        {#            {% if my_sub_item == 42 %}#}
+        {#                <li>{{ my_sub_item |add:52 }}</li>#}
+        {#            {% elif my_sub_item == 'bce' %}#}
+        {#            <li>This is not a number</li>#}
+        {#            {% else %}#}
+        {#                <li>{{ my_sub_item }}</li>#}
+        {#            {% endif %}#}
+        {#        {% endfor %}#}
+        {% for i in my_list %}
+            <li>{{ i }}</li>
         {% endfor %}
     </ul>
 {% endblock %}
