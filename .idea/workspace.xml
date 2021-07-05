@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de11dd56-c178-426f-86c2-4bf14152e9e1" name="Default Changelist" comment="Now form is working">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/product/product-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/product-create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,8 @@
       <workItem from="1625326902619" duration="21000" />
       <workItem from="1625327123390" duration="20000" />
       <workItem from="1625343342813" duration="295000" />
-      <workItem from="1625355908139" duration="6074000" />
+      <workItem from="1625355908139" duration="9094000" />
+      <workItem from="1625488016552" duration="1512000" />
     </task>
     <task id="LOCAL-00001" summary="Static render from db">
       <created>1625256290106</created>
