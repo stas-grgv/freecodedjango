@@ -8,6 +8,6 @@ urlpatterns = [
     path('', views.home_view, name='home'),
     path('contact/', views.contact_view, name='contact page'),
     path('about', views.about_view, name='about view'),
-    path('product/', product_detail_view, name='product'),
+    path('product/<int:id>', product_detail_view, name='product'),  # Dynamic routing
     path('new-product', product_create_view, name='product create')
 ]

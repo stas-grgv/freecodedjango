@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="de11dd56-c178-426f-86c2-4bf14152e9e1" name="Default Changelist" comment="Now form is working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freecodedjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Static render from db" />
     <MESSAGE value="Now form is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now form is working" />
+    <MESSAGE value="Now form is working again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now form is working again" />
   </component>
 </project>
