@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de11dd56-c178-426f-86c2-4bf14152e9e1" name="Default Changelist" comment="Now form is working">
+      <change afterPath="$PROJECT_DIR$/templates/product/product-delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freecodedjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
