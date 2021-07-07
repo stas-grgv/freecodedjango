@@ -12,5 +12,4 @@ class Product(models.Model):
 
     # Dynamic url with id argument
     def get_absolute_url(self):
-        # return f"/product/{self.id}"
-        return reverse("product detail", kwargs={"id": self.id})
+        return reverse("product-detail", kwargs={"id": self.id})

@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-    {% for instnc in object_list %}
+    {% for instance in object_list %}
         <span>
-            {{ instnc.id }} -
-            <a href="{{ instnc.get_absolute_url }}">
-                {{ instnc.title }}
+            {{ instance.id }} -
+            <a href="{{ instance.get_absolute_url }}">
+                {{ instance.title }}
             </a>
         </span>
         <br>
