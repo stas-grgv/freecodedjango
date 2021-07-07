@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de11dd56-c178-426f-86c2-4bf14152e9e1" name="Default Changelist" comment="Now form is working again">
-      <change afterPath="$PROJECT_DIR$/templates/product/product-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/freecodedjango.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/freecodedjango.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freecodedjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freecodedjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-    </list>
+    <list default="true" id="de11dd56-c178-426f-86c2-4bf14152e9e1" name="Default Changelist" comment="Dynamic product url" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +109,7 @@
       <workItem from="1625604229270" duration="76000" />
       <workItem from="1625609578368" duration="239000" />
       <workItem from="1625610839353" duration="495000" />
-      <workItem from="1625656066595" duration="1489000" />
+      <workItem from="1625656066595" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="Static render from db">
       <created>1625256290106</created>
@@ -134,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625263652579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dynamic product url">
+      <created>1625659735289</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625659735289</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +154,7 @@
     <MESSAGE value="Static render from db" />
     <MESSAGE value="Now form is working" />
     <MESSAGE value="Now form is working again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now form is working again" />
+    <MESSAGE value="Dynamic product url" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamic product url" />
   </component>
 </project>
