@@ -4,4 +4,4 @@ __pycache__
 *.sqlite3
 *.sublime-project
 .idea/workspace.xml
-migrations
+.idea/*
