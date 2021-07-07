@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Blog</h2>
+    <h3>Articles list</h3>
+    {% for a in articles %}
+        <p>{{ a.title }}</p>
+        <p>{{ a.description }}</p>
+    {% endfor %}
+{% endblock %}
