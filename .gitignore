@@ -3,5 +3,4 @@ __pycache__
 /django-dev-venv
 *.sqlite3
 *.sublime-project
-.idea/workspace.xml
-.idea/*
+.idea
