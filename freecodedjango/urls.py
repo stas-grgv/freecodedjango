@@ -1,15 +1,14 @@
 from django.contrib import admin
 from django.urls import path, include
 
+# Custom imports
+import pages.urls
 import products.urls
-from pages import views
 import blog.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home_view, name='home'),
-    path('contact/', views.contact_view, name='contact page'),
-    path('about', views.about_view, name='about view'),
+    path('', include(pages.urls)),
     path('products/', include(products.urls)),
     path('blog/', include(blog.urls)),
 ]
