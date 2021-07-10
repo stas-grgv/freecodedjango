@@ -10,6 +10,21 @@ class Product(models.Model):
     summary = models.TextField(blank=True, null=False)
     featured = models.BooleanField(default=False)
 
+    # Выводить title модели вместо Product etc..
+    def __str__(self):
+        return self.title
+
     # Dynamic url with id argument
     def get_absolute_url(self):
         return reverse("products:product-detail", kwargs={"id": self.id})
+
+
+class OrderItem(models.Model):
+    product = models.ManyToManyField(Product)
+    quantity = models.IntegerField(default=0, blank=False, editable=True)
+
+
+class Order(models.Model):
+    items = models.ManyToManyField(OrderItem)
+    address = models.TextField()
+    client_name = models.CharField(max_length=120)

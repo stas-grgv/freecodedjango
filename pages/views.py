@@ -1,7 +1,7 @@
 from django.http import HttpResponse as hr
 from django.shortcuts import redirect
 from django.shortcuts import render
-
+from django.contrib.auth import logout
 # Create your views here.
 from pages.forms import RegisterForm
 
@@ -21,6 +21,18 @@ def about_view(request, *args, **kwargs):
         "my_list": [123, 42, 24, 'bce']
     }
     return render(request, "about.html", my_context)
+
+
+def login_view(request, *args, **kwargs):
+    context = {
+
+    }
+    return render(request, "login.html", context)
+
+
+# TODO: Set logout function
+# def logout(request):
+#     logout(request)
 
 
 def registration_view(request, *args, **kwargs):

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db82e6c0-02cb-44ce-84f5-ba03bf44623d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration-form.html" afterDir="false" />
+    <list default="true" id="db82e6c0-02cb-44ce-84f5-ba03bf44623d" name="Default Changelist" comment="added stupid registration form">
+      <change afterPath="$PROJECT_DIR$/products/migrations/0009_orderitem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0010_orderitem_quantity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products/migrations/0011_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freecodedjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freecodedjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +98,21 @@
       <workItem from="1625697259305" duration="2341000" />
       <workItem from="1625789150095" duration="1682000" />
       <workItem from="1625839448188" duration="32000" />
-      <workItem from="1625858836578" duration="1314000" />
+      <workItem from="1625858836578" duration="1461000" />
+      <workItem from="1625861256260" duration="108000" />
+      <workItem from="1625869862791" duration="1195000" />
+      <workItem from="1625944407268" duration="1000" />
+      <workItem from="1625944450202" duration="5000" />
+      <workItem from="1625944652760" duration="5746000" />
     </task>
+    <task id="LOCAL-00001" summary="added stupid registration form">
+      <created>1625860341824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625860341824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +129,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added stupid registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stupid registration form" />
   </component>
 </project>

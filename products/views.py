@@ -1,8 +1,16 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import Http404
+from rest_framework import viewsets, permissions
 
+from serializers import ProductSerializer
 from .models import Product
 from .forms import RawProductForm, ProductForm
+
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all().order_by('id')
+    serializer_class = ProductSerializer
+    permission_classes = [permissions.BasePermission]
 
 
 # View with product detail. Now with id 1
