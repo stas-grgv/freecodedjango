@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="db82e6c0-02cb-44ce-84f5-ba03bf44623d" name="Default Changelist" comment="added stupid registration form">
-      <change afterPath="$PROJECT_DIR$/products/migrations/0009_orderitem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0010_orderitem_quantity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0011_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+    <list default="true" id="db82e6c0-02cb-44ce-84f5-ba03bf44623d" name="Default Changelist" comment="API Endpoint for products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freecodedjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freecodedjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/freecodedjango/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0002_product_summary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0003_alter_product_title.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0004_alter_product_price.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0005_alter_product_summary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0006_product_featured.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0007_alter_product_summary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0008_alter_product_featured.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0009_orderitem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0010_orderitem_quantity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0011_order.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +58,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +112,14 @@
       <workItem from="1625869862791" duration="1195000" />
       <workItem from="1625944407268" duration="1000" />
       <workItem from="1625944450202" duration="5000" />
-      <workItem from="1625944652760" duration="5746000" />
+      <workItem from="1625944652760" duration="5981000" />
+      <workItem from="1625959976683" duration="300000" />
+      <workItem from="1626030059599" duration="4900000" />
+      <workItem from="1626046081878" duration="310000" />
+      <workItem from="1626123277949" duration="3242000" />
+      <workItem from="1626132869024" duration="35000" />
+      <workItem from="1626180431117" duration="1202000" />
+      <workItem from="1626181675680" duration="3207000" />
     </task>
     <task id="LOCAL-00001" summary="added stupid registration form">
       <created>1625860341824</created>
@@ -112,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625860341824</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="API Endpoint for products">
+      <created>1625959315853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625959315853</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +155,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added stupid registration form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added stupid registration form" />
+    <MESSAGE value="API Endpoint for products" />
+    <option name="LAST_COMMIT_MESSAGE" value="API Endpoint for products" />
   </component>
 </project>

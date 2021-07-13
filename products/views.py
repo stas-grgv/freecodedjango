@@ -1,16 +1,30 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import Http404
-from rest_framework import viewsets, permissions
+from django.http import Http404, response
+from rest_framework import generics, serializers, viewsets, permissions
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
-from serializers import ProductSerializer
-from .models import Product
+from serializers import OrderSerializer, ProductSerializer, CreateUserSerializer, OrderItemSerializer
+from .models import Order, Product, OrderItem
 from .forms import RawProductForm, ProductForm
 
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all().order_by('id')
     serializer_class = ProductSerializer
-    permission_classes = [permissions.BasePermission]
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class OrdersViewSet(viewsets.ModelViewSet):
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+
+class OrderItemViewSet(viewsets.ModelViewSet):
+    queryset = OrderItem.objects.all()
+    serializer_class = OrderItemSerializer
+    permission_classes = permissions.IsAuthenticated
 
 
 # View with product detail. Now with id 1

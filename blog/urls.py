@@ -1,8 +1,9 @@
 from django.urls import path
-from blog.views import articles_list, article_details
+from blog.views import articles_list, article_details, UserCreate
 
 app_name = 'blog'
 urlpatterns = [
     path('', articles_list, name='articles list'),
-    path('<int:id>', article_details, name='article details')
+    path('<int:id>', article_details, name='article details'),
+    path('api/register', UserCreate.as_view()),
 ]
