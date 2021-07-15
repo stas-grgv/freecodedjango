@@ -1,5 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.db.models.deletion import CASCADE
 from django.urls import reverse
+import datetime
 
 
 class Product(models.Model):
@@ -27,3 +30,8 @@ class Order(models.Model):
     items = models.ManyToManyField(OrderItem)
     address = models.TextField()
     client_name = models.CharField(max_length=120)
+    client_user = models.OneToOneField(User, on_delete=CASCADE)
+    date_created = models.DateField(auto_now_add=True)
+
+    def __str__(self) -> str:
+        return (f"{self.client_name}: Создан:{self.date_created}")

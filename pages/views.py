@@ -1,3 +1,4 @@
+from products.models import Order
 from django.http import HttpResponse as hr
 from django.shortcuts import redirect
 from django.shortcuts import render
@@ -7,7 +8,17 @@ from pages.forms import RegisterForm
 
 
 def home_view(request, *args, **kwargs):
-    return render(request, "home.html", {})
+    user = request.user
+    try:
+        orders = Order.objects.get(client_user = user)
+    except:
+        orders = "no orders"
+    context = {
+        "username": user.username,
+        "orders": orders,
+    }
+
+    return render(request, "home.html", context)
 
 
 def contact_view(request, *args, **kwargs):
