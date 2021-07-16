@@ -21,17 +21,24 @@ class Product(models.Model):
         return reverse("product-detail", kwargs={"id": self.id})
 
 
-class OrderItem(models.Model):
-    product = models.ManyToManyField(Product)
-    quantity = models.IntegerField(default=0, blank=False, editable=True)
+class Client(models.Model):
+    name = models.CharField(max_length=160)
+
+    def __str__(self):
+        return self.name
 
 
 class Order(models.Model):
-    items = models.ManyToManyField(OrderItem)
     address = models.TextField()
-    client_name = models.CharField(max_length=120)
-    client_user = models.OneToOneField(User, on_delete=CASCADE)
+    client = models.ForeignKey(Client, on_delete=models.CASCADE, null=True, blank=False)
+
     date_created = models.DateField(auto_now_add=True)
 
     def __str__(self) -> str:
-        return (f"{self.client_name}: Создан:{self.date_created}")
+        return f"{self.client.name}: Создан:{self.date_created}"
+
+
+class OrderItem(models.Model):
+    product = models.ForeignKey(Product, on_delete=CASCADE, blank=True, editable=True, null=True)
+    quantity = models.IntegerField(default=0, blank=False, editable=True)
+    order = models.ForeignKey(Order, blank=True, null=True, editable=True, on_delete=CASCADE)

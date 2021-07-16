@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # own
-    'products', 'pages', 'blog'
+    'products', 'pages', 'blog',
 ]
 
 MIDDLEWARE = [
