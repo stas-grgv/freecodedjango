@@ -6,7 +6,7 @@ import datetime
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=120)
+    title = models.CharField("Название продукта", max_length=120)
     description = models.TextField()
     price = models.DecimalField(decimal_places=2, max_digits=1000)
     summary = models.TextField(blank=True, null=False)
