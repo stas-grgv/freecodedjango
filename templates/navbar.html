@@ -1,8 +1,15 @@
 <nav>
     <h3>This is header</h3>
-    <span>user: <b>{{ request.user }}</b></span>
-    {#    TODO: Set up logout button#}
-    <button>Logoot</button>
+    {% block content %}
+        {% if user.is_authenticated %}
+            <span>user: <b>{{ user.username }}</b></span>
+            <form action="logout">
+                <input type="submit" value="Logout">
+            </form>
+        {% else %}
+            <a href="login">Login</a>
+        {% endif %}
+    {% endblock %}
     <ul>
         <li>Brand</li>
         <li>Contact</li>

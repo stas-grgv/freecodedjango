@@ -1,6 +1,6 @@
 __pycache__
 *.sqlite
-/django-dev-venv
+/django-venv
 *.sqlite3
 *.sublime-project
 .idea

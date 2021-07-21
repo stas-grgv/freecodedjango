@@ -1,16 +1,15 @@
 from products.models import Order
-from django.http import HttpResponse as hr
 from django.shortcuts import redirect
 from django.shortcuts import render
-from django.contrib.auth import logout
+from django.contrib.auth import authenticate, login, logout
 # Create your views here.
-from pages.forms import RegisterForm
+from pages.forms import RegisterForm, LoginForm
 
 
 def home_view(request, *args, **kwargs):
     user = request.user
     try:
-        orders = Order.objects.get(client_user = user)
+        orders = Order.objects.get(client_user=user)
     except:
         orders = "no orders"
     context = {
@@ -35,15 +34,33 @@ def about_view(request, *args, **kwargs):
 
 
 def login_view(request, *args, **kwargs):
-    context = {
+    loginForm = LoginForm(request.POST)
+    if request.method == 'POST':
+        context = {
+            "form": loginForm,
+        }
+        if loginForm.is_valid():
+            cd = loginForm.cleaned_data
+            user = authenticate(request, username=cd['username'], password=cd['password'])
 
-    }
+            if user is not None:
+                login(request, user)
+                return redirect('/')
+            else:
+                return redirect("/")
+    else:
+        context = {
+            "form": loginForm,
+        }
+        form = LoginForm()
+
     return render(request, "login.html", context)
 
 
 # TODO: Set logout function
-# def logout(request):
-#     logout(request)
+def logout_view(request):
+    logout(request)
+    return redirect('/')
 
 
 def registration_view(request, *args, **kwargs):
